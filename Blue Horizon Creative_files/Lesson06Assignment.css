@@ -61,7 +61,7 @@ body {
   height: auto;
 }
 
-body.site-footer {
+site-footer {
   clear: both;
   width: 1200px;
   margin: 40px auto 0 auto;
@@ -69,7 +69,13 @@ body.site-footer {
   text-align: center;
   background-color: #f2f2f2;
 }
-
+.site-footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 @media (max-width: 600px) {
 
   nav ul {
