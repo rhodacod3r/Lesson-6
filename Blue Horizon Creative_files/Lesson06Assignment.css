@@ -1,17 +1,20 @@
-/* INTENTIONALLY NON-RESPONSIVE CSS FOR LESSON 6 ASSIGNMENT */
+/* INTENTIONALLY NON-RESPONSIVE CSS FOR LESSON 6 ASSIGNMENT — NOW FIXED FOR MOBILE */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #ffffff;
   color: #333;
-  
-  .site-header img {
-  width: 100% !important;
+}
+
+/* HEADER IMAGE */
+.site-header img {
+  width: 100%;
   height: auto;
   display: block;
 }
 
+/* NAVIGATION */
 .main-nav {
   background-color: #1f3d5a;
   width: 100%;
@@ -27,7 +30,6 @@ body {
 }
 
 .main-nav li {
-  display: inline-block;
   padding: 15px 20px;
 }
 
@@ -37,38 +39,42 @@ body {
   font-weight: bold;
 }
 
+/* PAGE CONTAINER */
 .page-container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 20px auto;
+  padding: 0 20px;
 }
 
-.intro {
-  margin-bottom: 30px;
-}
-
+/* TWO COLUMN LAYOUT */
 .two-column {
-  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .column {
-  width: 560px;
-  float: left;
-  margin-right: 40px;
+  width: 48%;
+  margin-bottom: 20px;
 }
 
 .column img {
-  width: 560px;
+  width: 100%;
   height: auto;
 }
 
-site-footer {
+/* FOOTER */
+.site-footer {
   clear: both;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 40px auto 0 auto;
   padding: 20px 0;
   text-align: center;
   background-color: #f2f2f2;
 }
+
 .site-footer .footer-container {
   display: flex;
   justify-content: space-between;
@@ -76,12 +82,23 @@ site-footer {
   flex-wrap: wrap;
   gap: 20px;
 }
+
+/* MOBILE FIXES */
 @media (max-width: 600px) {
 
-  nav ul {
+  /* NAV STACKS */
+  .main-nav ul {
     flex-direction: column;
     align-items: center;
   }
+
+  .main-nav li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin: 10px 0;
+  }
+
+  /* TWO COLUMN → ONE COLUMN */
   .two-column {
     flex-direction: column;
   }
@@ -91,18 +108,9 @@ site-footer {
     margin-right: 0;
   }
 
-  .main-nav ul {
+  /* FOOTER STACKS */
+  .site-footer .footer-container {
     flex-direction: column;
-  }
-
-  .main-nav li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    margin: 10px 0;
-
-    footer .footer-section {
-      width: 100%;
-      margin-bottom: 15px;
-    }
+    text-align: center;
   }
 }
