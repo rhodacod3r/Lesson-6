@@ -25,9 +25,6 @@ body.main-nav {
   margin: 0;
   padding: 0;
 }
-.d2l-html-block .main-nav {
-  background-color: #1f3d5a;
-}
 
 .main-nav li {
   display: inline-block;
