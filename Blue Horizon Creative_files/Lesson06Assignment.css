@@ -7,10 +7,20 @@ body {
   color: #333;
 }
 
-.site-header {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Make the banner responsive */
+.d2l-html-block .site-header img {
+  width: 100% !important;   /* fills the mobile screen */
+  max-width: 600px;         /* keeps your desktop size */
+  height: auto;             /* prevents distortion */
+  display: block;           /* removes weird spacing */
+  margin: 0 auto;           /* centers the banner */
+}
+
+/* Make the header container responsive */
+.d2l-html-block .site-header {
+  width: 100% !important;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .main-nav {
