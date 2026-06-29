@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-.site-header img {
+.d2-html-block .site-header img {
   width: 1200px;
   height: auto;
   display: block;
