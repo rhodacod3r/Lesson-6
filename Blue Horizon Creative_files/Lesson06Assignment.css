@@ -7,14 +7,12 @@ body {
   color: #333;
 }
 
-/* HEADER IMAGE */
-.site-header img {
+.site-header {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* NAVIGATION */
 .main-nav {
   background-color: #1f3d5a;
   width: 100%;
@@ -39,7 +37,6 @@ body {
   font-weight: bold;
 }
 
-/* PAGE CONTAINER */
 .page-container {
   width: 100%;
   max-width: 1200px;
@@ -47,7 +44,6 @@ body {
   padding: 0 20px;
 }
 
-/* TWO COLUMN LAYOUT */
 .two-column {
   width: 100%;
   max-width: 1200px;
@@ -68,7 +64,6 @@ body {
   height: auto;
 }
 
-/* FOOTER */
 .site-footer {
   clear: both;
   width: 100%;
@@ -87,7 +82,6 @@ body {
   gap: 20px;
 }
 
-/* MOBILE FIXES */
 @media (max-width: 600px) {
 
   .main-nav ul {
