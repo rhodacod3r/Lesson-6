@@ -49,14 +49,18 @@ body {
 
 /* TWO COLUMN LAYOUT */
 .two-column {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .column {
-  width: 48%;
-  margin-bottom: 20px;
+  width: 560px;
+  max-width: 100%;
+  float: left;
+  margin-right: 40px;
 }
 
 .column img {
@@ -86,7 +90,6 @@ body {
 /* MOBILE FIXES */
 @media (max-width: 600px) {
 
-  /* NAV STACKS */
   .main-nav ul {
     flex-direction: column;
     align-items: center;
@@ -98,7 +101,6 @@ body {
     margin: 10px 0;
   }
 
-  /* TWO COLUMN → ONE COLUMN */
   .two-column {
     flex-direction: column;
   }
@@ -106,11 +108,12 @@ body {
   .column {
     width: 100%;
     margin-right: 0;
+    float: none;
   }
 
-  /* FOOTER STACKS */
   .site-footer .footer-container {
     flex-direction: column;
     text-align: center;
   }
 }
+
