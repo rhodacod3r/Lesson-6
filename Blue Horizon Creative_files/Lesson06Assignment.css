@@ -1,40 +1,30 @@
 /* INTENTIONALLY NON-RESPONSIVE CSS FOR LESSON 6 ASSIGNMENT — NOW FIXED FOR MOBILE */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #ffffff;
   color: #333;
 }
 
-/* Make the banner responsive */
-.d2l-html-block .site-header img {
-  width: 100% !important;   /* fills the mobile screen */
-  max-width: 600px;         /* keeps your desktop size */
-  height: auto;             /* prevents distortion */
-  display: block;           /* removes weird spacing */
-  margin: 0 auto;           /* centers the banner */
+/* Banner */
+.site-header img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Make the header container responsive */
-.d2l-html-block .site-header {
-  width: 100% !important;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
+/* Navigation */
 .main-nav {
   background-color: #1f3d5a;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .main-nav ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-nav li {
@@ -42,31 +32,27 @@ body {
 }
 
 .main-nav a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Page container */
 .page-container {
-  width: 100%;
   max-width: 1200px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
+/* Two-column layout */
 .two-column {
-  width: 100%;
-  max-width: 1200px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .column {
-  width: 560px;
-  max-width: 100%;
-  float: left;
-  margin-right: 40px;
+  flex: 1 1 560px;
 }
 
 .column img {
@@ -74,50 +60,26 @@ body {
   height: auto;
 }
 
+/* Footer */
 .site-footer {
-  clear: both;
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px auto 0 auto;
-  padding: 20px 0;
-  text-align: center;
   background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
-.site-footer .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-@media (max-width: 600px) {
+/* Mobile stacking */
+@media (max-width: 900px) {
+  .two-column {
+    flex-direction: column;
+  }
 
   .main-nav ul {
     flex-direction: column;
-    align-items: center;
   }
 
   .main-nav li {
     padding: 12px 0;
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    margin: 10px 0;
-  }
-
-  .two-column {
-    flex-direction: column;
-  }
-
-  .column {
-    width: 100%;
-    margin-right: 0;
-    float: none;
-  }
-
-  .site-footer .footer-container {
-    flex-direction: column;
-    text-align: center;
   }
 }
-
