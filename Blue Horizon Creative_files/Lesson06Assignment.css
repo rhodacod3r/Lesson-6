@@ -6,13 +6,12 @@ body {
   background-color: #ffffff;
   color: #333;
 }
-
-.d2-html-block .site-header img {
-  width: 1200px;
+.d2l-html-block .site-header img {
+  width: 100% !important;
   height: auto;
   display: block;
-  margin: 0 auto;
 }
+
 
 body.main-nav {
   background-color: #1f3d5a;
