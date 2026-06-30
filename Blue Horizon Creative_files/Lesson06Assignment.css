@@ -63,7 +63,10 @@ body {
 }
 
 /* Mobile stacking */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+  .mobile-break{
+  display: block;
+}
   .two-column {
     flex-direction: column;
   }
