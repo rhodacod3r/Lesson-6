@@ -1,9 +1,10 @@
-/* INTENTIONALLY NON-RESPONSIVE CSS FOR LESSON 6 ASSIGNMENT — NOW FIXED FOR MOBILE */
+
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   color: #333;
+  line-height: 1.5;
 }
 
 .site-header img {
@@ -11,17 +12,18 @@ body {
   height: auto;
   display: block;
 }
+
 .main-nav {
   background-color: #1f3d5a;
 }
 
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.main-nav ul (
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .main-nav li {
@@ -38,6 +40,14 @@ body {
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 15px;
+}
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  margin-top: 10px
 }
 
 .two-column {
@@ -61,12 +71,17 @@ body {
   padding: 20px 0;
   margin-top: 40px;
 }
+.mobile-break {
+  display: none;
+}
 
 /* Mobile stacking */
 @media (max-width: 600px) {
-  .mobile-break{
+  .mobile-break {
   display: block;
 }
+  @media (max-width: 900px) {
+    
   .two-column {
     flex-direction: column;
   }
@@ -83,5 +98,8 @@ body {
   .main-nav li {
     padding: 12px 0;
     border-bottom: 1px solid rgba(255,255,255,0.2);
+    .intro h1 {
+      font-size: 1.5rem;
+    }
   }
 }
